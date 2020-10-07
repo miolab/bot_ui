@@ -5,6 +5,7 @@ const botUi = new BotUI("my-botui-app");
 botUi.message
   .add({
     content: "Hello, this is 'IM Bot' !",
+    delay: 150,
   })
   .then(() => {
     botUi.message.add({
@@ -21,7 +22,9 @@ botUi.message
   })
   .then(() => {
     return botUi.action.text({
-      action: { placeholder: "名前を入力してください..." },
+      action: {
+        placeholder: "名前を入力してください..."
+      },
       delay: 2000,
     });
   });
