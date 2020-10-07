@@ -9,13 +9,13 @@ botUi.message
   .then(() => {
     botUi.message.add({
       content: "はじめまして！",
-      delay: 800,
+      delay: 600,
     });
   })
   .then(() => {
     botUi.message.add({
-      content: "あなたのことは、どのようにお呼びすれば良いでしょう？",
-      delay: 1600,
+      content: "あなたのことは、どのようにお呼びいたしましょう？",
+      delay: 1400,
       cssClass: "js-add-space",
     });
   })
