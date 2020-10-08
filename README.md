@@ -2,11 +2,13 @@
 
 BotUI によるチャットボット実装リポジトリです
 
-## つくったボット
+## :rocket: つくったボット
 
 IM bot https://miolab.github.io/bot_ui/
 
-## 参考
+（現在進行中）
+
+## :book: 参考
 
 - Docs https://docs.botui.org/
 
