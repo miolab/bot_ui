@@ -4,9 +4,13 @@ BotUI によるチャットボット実装リポジトリです
 
 ## :rocket: つくったボット
 
-IM bot https://miolab.github.io/bot_ui/
+**IM bot**
 
-（現在進行中）
+以下を準備中
+
+- Gif イメージ
+
+- How to use (incl. git clone ...)
 
 ## :book: 参考
 
