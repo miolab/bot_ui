@@ -33,4 +33,29 @@ botUi.message
       content: name.value + "様ですね？",
       delay: 1000,
     });
+  })
+  .then(() => {
+    return botUi.action.button({
+      delay: 1600,
+      action: [{
+        icon: "check",
+        text: "はい",
+        value: true
+      }, {
+        icon: "close",
+        text: "いいえ",
+        value: false
+      }],
+    });
+  })
+  .then((res) => {
+    res.value ?
+      botUi.message.add({
+        content: "ようこそ！",
+        delay: 800,
+      }) :
+      botUi.message.add({
+        content: "あれ？",
+        delay: 800,
+      });
   });

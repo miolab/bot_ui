@@ -6,11 +6,15 @@ BotUI によるチャットボット実装リポジトリです
 
 **IM bot**
 
-以下を準備中
-
 - Gif イメージ
 
-- How to use (incl. git clone ...)
+  準備中
+
+#### Usage
+
+1. `git clone https://github.com/miolab/bot_ui.git`
+
+1. ローカルブラウザ上で `index.html` 確認
 
 ## :book: 参考
 
