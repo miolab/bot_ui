@@ -33,4 +33,18 @@ botUi.message
       content: name.value + "様ですね？",
       delay: 1000,
     });
+  })
+  .then(() => {
+    botUi.action.button({
+      action: [{
+        icon: "check",
+        text: "はい",
+        value: true
+      }, {
+        icon: "close",
+        text: "いいえ",
+        value: false
+      }, ],
+      delay: 1600,
+    });
   });
