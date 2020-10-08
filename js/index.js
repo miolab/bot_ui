@@ -35,7 +35,8 @@ botUi.message
     });
   })
   .then(() => {
-    botUi.action.button({
+    return botUi.action.button({
+      delay: 1600,
       action: [{
         icon: "check",
         text: "はい",
@@ -44,7 +45,17 @@ botUi.message
         icon: "close",
         text: "いいえ",
         value: false
-      }, ],
-      delay: 1600,
+      }],
     });
+  })
+  .then((res) => {
+    res.value ?
+      botUi.message.add({
+        content: "ようこそ！",
+        delay: 800,
+      }) :
+      botUi.message.add({
+        content: "あれ？",
+        delay: 800,
+      });
   });
