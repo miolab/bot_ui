@@ -27,4 +27,10 @@ botUi.message
       },
       delay: 2000,
     });
+  })
+  .then((name) => {
+    botUi.message.add({
+      content: name.value + "様ですね？",
+      delay: 1000,
+    });
   });
