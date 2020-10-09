@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BotUI (IM Bot)</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BotUI (IM Bot)</title>
+    <link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/botui/build/botui-theme-default.css"
+    />
+    <style>
+      .js-add-space {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
 
-  <link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/botui/build/botui-theme-default.css">
-  <style>
-    .js-add-space {
-      margin-top: 40px;
-    }
-  </style>
-</head>
+  <body>
+    <div id="my-botui-app">
+      <bot-ui></bot-ui>
+    </div>
 
-<body>
-  <div id="my-botui-app">
-    <bot-ui></bot-ui>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
-  <script src="https://unpkg.com/botui/build/botui.min.js"></script>
-  <script src="js/index.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="https://unpkg.com/botui/build/botui.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/function.js"></script>
+  </body>
 </html>
