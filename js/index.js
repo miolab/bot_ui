@@ -1,5 +1,8 @@
 "use strict";
 
+const jsVisibility = document.getElementById('js-visibility');
+jsVisibility.style.visibility = 'hidden';
+
 const botUi = new BotUI("my-botui-app");
 
 botUi.message
@@ -58,4 +61,7 @@ botUi.message
         content: "あれ？",
         delay: 800,
       });
+  })
+  .then(() => {
+    jsVisibility.style.visibility = "visible";
   });
