@@ -1,8 +1,5 @@
 "use strict";
 
-const jsVisibility = document.getElementById('js-visibility');
-jsVisibility.style.visibility = 'hidden';
-
 const botUi = new BotUI("my-botui-app");
 
 botUi.message
@@ -63,5 +60,6 @@ botUi.message
       });
   })
   .then(() => {
-    jsVisibility.style.visibility = "visible";
+    const jsVisibility = document.getElementById('reload-button');
+    jsVisibility.classList.remove("js-visibility");
   });
