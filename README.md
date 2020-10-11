@@ -8,7 +8,7 @@ BotUI によるチャットボット実装リポジトリです
 
 - Gif イメージ
 
-  準備中
+  <img width="800px" src="https://user-images.githubusercontent.com/33124627/95676812-f9c3fd00-0bfb-11eb-8c63-f2d08d1ecc0e.gif">
 
 #### Usage
 
