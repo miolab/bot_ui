@@ -61,5 +61,9 @@ botUi.message
   })
   .then(() => {
     const jsVisibility = document.getElementById('reload-button');
-    jsVisibility.classList.remove("js-visibility");
+
+    (async () => {
+      await sleep(1600)
+      jsVisibility.classList.remove("js-visibility");
+    })();
   });
