@@ -58,4 +58,12 @@ botUi.message
         content: "あれ？",
         delay: 800,
       });
+  })
+  .then(() => {
+    const jsVisibility = document.getElementById('reload-button');
+
+    (async () => {
+      await sleep(1600)
+      jsVisibility.classList.remove("js-visibility");
+    })();
   });
