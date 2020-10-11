@@ -2,21 +2,28 @@
 
 const botUi = new BotUI("my-botui-app");
 
-botUi.message
-  .add({
-    content: "Hello, this is 'IM Bot' !",
-    delay: 150,
+botUi.action.button({
+    action: [{
+      icon: "check",
+      text: "Hello, IM Bot",
+    }],
+  })
+  .then(() => {
+    botUi.message.add({
+      content: "Hello, this is 'IM Bot' !",
+      delay: 500,
+    });
   })
   .then(() => {
     botUi.message.add({
       content: "はじめまして！",
-      delay: 600,
+      delay: 800,
     });
   })
   .then(() => {
     botUi.message.add({
       content: "あなたのことは、どのようにお呼びいたしましょう？",
-      delay: 1400,
+      delay: 1600,
       cssClass: "js-add-space",
     });
   })
